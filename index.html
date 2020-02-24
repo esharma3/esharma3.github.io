@@ -6,331 +6,287 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
-		<!-- <script src="assets/js/js_code.js"></script> -->
-
-		<style>
-			*{
-				margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif;
-			}
-		</style>
+		<link rel="stylesheet" href="css/style.css">
+		<link href = "/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+     	<script src = "/scripts/jquery.min.js"></script>
+      	<script src = "/bootstrap/js/bootstrap.min.js"></script>
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	</head>
+
 
 	<body>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<nav id="sidebar" class="navbar navbar-expand-lg bg-dark fixed-top">
 
-  	   	<div class="view" style="background-image: url('images/bg1.jfif'); background-repeat: no-repeat; background-size: cover; height: 100%;
-  	   	background-position: center center;">
+			<a class="navbar-brand js-scroll-trigger pt-5" href="#header">
+			    <span class="d-block d-lg-none">Welcome to My Page</span>
+			    <span class="d-none d-lg-block">
+         			<img class="img-fluid img-profile rounded-circle" src="images/my_pic.jpg" alt="">
+         		</span>
+         	</a>
 
-  <!-- 	   	<section id="header">
-            <div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        		<span class="navbar-toggler-icon"></span>
+      		</button>
 
-                <div class="row 300%">
+     	 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  		<ul class="navbar-nav flex-column">
+				   	<li class="nav-item">
+				      <a class="nav-link js-scroll-trigger active" href="#header">About</a></li>
+				    <li class="nav-item">
+				      <a class="nav-link js-scroll-trigger" href="#education">Education & Certifications</a> </li>				  
+				    <li class="nav-item">
+				      <a class="nav-link js-scroll-trigger" href="#skillset">Skillset</a></li>				
+				    <li class="nav-item">
+				      <a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+				    <li class="nav-item">
+				      <a class="nav-link js-scroll-trigger" href="#experience">Work Experience</a></li>	
+		  		</ul>
+		  	</div>
 
-                    <div class="col-md-12 text-white text-center mt-xl-5 mb-5 wow fadeInLeft">
-	                    <h1 class="h1-responsive font-weight-bold mt-xl-5 pt-5">Hi, I am Ekta!</h1>
-	                </div>
-
-            		<div class="col-md-12 text-center text-white mt-xl-5 mb-5">
-                		<h2>Welcome to my Page</h2>
-                	</div>
-
-					<div class="col-md-12 text-center text-white mt-xl-5 pt-5">
-						<a class="btn btn-info btn-lg" href="#about" role="button">Scroll Down</a>
-					</div>
-
-               	</div>
-            </div>
-        </div>
- 		</section> -->
-
- 		<section id="header">
- 		<div class="container d-flex flex-column pt-5 text-white">
-		
-					<div class="row 200%">
-
-						<div class="col-lg-4 col-md-6 col-12 pt-5"><br> 
-							<img src="images/my_pic.jpg" class="rounded-circle"/>
-						</div>
-				
-						<div class="col-lg-8 col-md-6 col-12 pt-5">
-							<h1>About Me</h1><br>
-							<!-- <hr class="w-25 mx-auto"> -->
-							<h6>Ekta Sharma</h6>
-							<h6>Email: ekta.sharma3@gmail.com</h6>
-							<h6>Cell: (415)9374164</h6><br>
-							
-							<p class="pt-2 pb-5">
-								Hi, I am Ekta, a creative and experienced software professional and an aspiring data scientist with skills from machine learning, statistical analysis, database management, data visualization and reporting, passionate about solving real-life problems with data-driven solutions, actively looking for new challenges and open to new opportunities in Austin, TX.<br><br>  
-
-								I will soon complete my Data Science and Analytics Certification course from University of Texas in Austin where I have developed  strong programming and data science skills that can tackle business problems in any domain. I have over a decade of experience in consulting and banking industry and I hold a Master's degree in Computer Applications.<br><br><br></p>
-						</div> 
-
-							<div class="col-md-12 text-center text-white mt-xl-5 pt-5 pb-5">
-						<a class="btn btn-outline-info btn-lg" href="#projects" role="button">Continue</a>
-					</div>
-
-					</div>
-			</div>
-		</section>
-
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-		  <a class="navbar-brand" href="#">"All the models are wrong, but some are useful" -- George Box</a>
-		  <ul class="navbar-nav ml-auto">
-		  	<li class="nav-item">
-		      <a class="nav-link" href="https://www.linkedin.com/in/ektasharma3/" target="_blank">Download Resume</a>
-		    <li class="nav-item">
-		      <a class="nav-link" href="https://www.linkedin.com/in/ektasharma3/" target="_blank">LinkedIn</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="https://github.com/esharma3" target="_blank">Github</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#">Kaggle</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#">Contact Me</a>
-		    </li>
-		  </ul>
 		</nav>
 
+<!-- about me -->
 
-	<!-- about me -->
+ 		<section id="header">
 
-		<!-- <section id="about">
-
-			<div class="view" style="background-image: url('images/bg4.jfif'); background-repeat: no-repeat; background-size: cover; height: 100%;
-  	   		background-position: center center;">
-  	   		
-			<div class="container d-flex flex-column pt-5">
+ 			<div class="container-fluid">
 		
-					<div class="row pt-5 300%">
+				<section class="about">
 
-						<div class="col-lg-4 col-md-6 col-12 pt-4 pb-4">
-							<span class="image fit"><img src="images/my_pic.jpg" class="img-fluid"></span>
-						</div>
+					<div class="aboutme">
+						<h1 class="pb-1">Ekta Sharma</h1>
+						<h6>Certified Data Scientist/Analyst - University of Texas, Austin</h6>
+						<h6>Bachelor of Computer Applications, Master of Computer Applications</h6> 
+						<h6> 12+ years of IT experience (Wells Fargo, Computer Sciences Corporation, Capgemini)  
+						<hr class="w-80 mx-auto"></h6> 
+
+						<h6>Email: ekta.sharma3@gmail.com</h6>
+						<h6>Cell: (415) 937-4164</h6>
+						<br><br>
+					</div>
+						 
+					<div class="aboutme">
+						<a class="btn btn-dark btn-li" href="https://www.linkedin.com/in/ektasharma3" target="_blank" role="button"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
+				 
+						<a class="btn btn-dark btn-git" href="https://github.com/esharma3" target="_blank" role="button"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+
+						<a class="btn btn-dark" href="Ekta_Sharma_Resume.pdf" target="_blank" role="button"><i class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
+					</div>
+          					
+	  				<div class="aboutme">
+						<p>
+							Hi, I am Ekta, a creative and experienced software professional and an aspiring data scientist with skills from machine learning, statistical analysis, python programming database management, data visualization and reporting, passionate about solving real-life problems with data-driven solutions, actively looking for new challenges and open to new opportunities in Austin, TX.<br><br>  
+
+							I will soon complete my Data Science and Analytics Certification course from University of Texas in Austin where I have developed  strong programming and data science skills that can tackle business problems in any domain. I have over a decade of experience in consulting and banking industry and I hold a Master's degree in Computer Applications.<br><br><br></p>
+					</div>
+
+				</section>
+
+
+	<!-- education -->
+
+				<section id="education">
+
+					<div class="aboutme">
+						<h1>Education and Certifications
+						<hr></h1>
+						<h5>Data Science/Analytics Certification, University of Texas, Austin</h5>
+							<h6> November 2019 - May 2020</h6><br>
+						<h5>Master of Computer Applications, Bharati Vidyapeeth University, Pune, India</h5>
+							<h6>July 2003 - June 2006</h6><br>
+						<h5>Bachelor of Computer Applications, CCS University, Meerut, India</h5>
+							<h6>July 2000 - June 2003</h6><br>
+						<h5>National Mathematics Olympiad, India</h5>
+							<h6>1998</h6><br>
+						<h5>National Mathematics Olympiad, India</h5><br>
+							<h6>2000</h6><br>
+
+						<h5>Udemy Certifications:</h5> 
+						<h6>Complete Python Bootcamp</h6>
+						<h6>Python for Data Science and Machine Learning Bootcamp</h6>
+						<h6>SQL - MySQL for Data Analytics and Business Intelligence</h6>
+						<h6>Microsoft Excel Beginners to Advanced, Data Analysis and VBA</h6>							
+					</div> 
 				
-						<div class="col-lg-8 col-md-6 col-12">
-							<h1>About Me</h1>
-							<hr>
-							<p class="pt-4 pb-5">
-								I am a creative and experienced software professional and an aspiring data scientist with skills from machine learning, statistical analysis, database management, data visualization and reporting, passionate about solving real-life problems with data-driven solutions, actively looking for new challenges and open to new opportunities in Austin, TX.<br><br>  
+				</section>
 
-								I will soon complete my Data Science and Analytics Certification course from University of Texas in Austin where I have developed  strong programming and data science skills that can tackle business problems in any domain. I have over a decade of experience in consulting and banking industry and I hold a Master's degree in Computer Applications.<br><br><br></p>
-						</div> 
 
-							<div class="col-md-12 text-center text-white mt-xl-5 pt-5 pb-5">
-						<a class="btn btn-outline-info btn-lg" href="#projects" role="button">Continue</a>
+<!-- skillset -->
+
+			<section id="skillset">
+
+				<div class="aboutme">
+
+					<h1>Skillset
+					<hr></h1>
+					<h5>Python Programming & More</h5>
+						<ul>
+							<li>Python 3</li>
+							<li>Numpy</li>
+							<li>Pandas</li>
+							<li>Matplotlib</li>
+							<li>Plotly</li>
+							<li>Bokeh</li>
+							<li>API Interactions, Web-Scrapping(BeautifuL Soup), Selenium, Splinter</li>
+							<li>SQL, SQLAlchemy, Flask, Flask-SQLAlchemy</li>
+							<li>Social Media Mining</li>
+						</ul>
+
+					<h5>Front-End Web Visualization</h5>
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Bootstrap</li>
+							<li>Dashboarding</li>
+							<li>JavaScript Charting</li>
+							<li>D3.js</li>
+							<li>Geomapping with Leaflet.js</li>
+						</ul>
+								 
+					<h5>Machine Learning and Statistics</h5>
+						<ul>
+							<li>Machine Learning Algorithms</li>
+							<li>Statistics for Machine Learning</li>
+							<li>Seaborn</li>
+							<li>Scikit Learn</li>
+							<li>Statsmodel</li>
+						</ul>
+		
+					<h5>Databases</h5>
+						<ul>
+							<li>MySQL</li>
+							<li>Oracle</li>
+							<li>MongoDB</li>
+							<li>SQLite</li>
+						</ul>
+			
+					<h5>Business Intelligence Software</h5>
+						<ul>
+							<li>Tableau</li>
+							<li>PowerBI</li>
+						</ul>
+										
+					<h5>Advanced Topics</h5>
+						<ul>
+							<li>Big Data Analytics with Hadoop</li>
+						</ul>
+
+					<h5>Other Skills</h5>
+						<ul>
+							<li>Microsoft Excel</li>
+							<li>Microsoft Word</li>
+							<li>Microsoft PowePoint</li>
+							<li>Microsoft Access</li>
+							<li>Quality Center</li>
+							<li>Software Design Principles</li>
+							<li>Software Design Life Cycle Models</li>
+							<li>Basic Design Patterns</li>
+							<li>C, C++, Java</li>
+						</ul>
+						
+				</div>
+			</section>
+
+
+	<!-- my projects -->
+
+			<section id="projects">
+
+				<div class="aboutme">
+
+					<h1>Projects
+					<hr></h1>
+					<p>Click on the project title to see the code on Github.</p>
+
+					<div class="prj">
+						<u><h4><a href="https://github.com/esharma3/project_data_jobs_market_analysis" target="_blank">Indeed Data Jobs Market analysis (2019)</a></h4></u>
+						<p>The purpose of this project is to analyze the US job market for Data Jobs to answer the following questions. The scope of this project is limited to top 10 US Tech(IT) cities.</p>
+						<ul>					
+							<li>Which US city has more data jobs?</li>
+							<li>Citywise which companies are posting more data jobs?</li>
+							<li>Which companies (combined for all 10 cities) are posting relatively higher number of data jobs?</li>
+							<li>What is the number of data jobs getting posted for various job titles like data analyst, data scientist, data engineer, BI, AI, Machine Learning etc.? Are there more jobs for one job title over the other? Which data job title has been posted the most and which has been posted the least?</li>
+							<li>What is the salary range for data jobs wages? How does it change based on the city?</li>
+							<li>Is there a correlation between data job salary and company rating?</li>
+							<li>Is there a correlation between data job salary and job's minimum experience requirement?</li>
+							<li>Where does the data wages stand in comparison to city and state median wages?</li>
+							<li>How well are the data wages doing in comparison to the apartment rent based on the city?</li>
+							<li>How well are the data wages doing in comparison to the median house prices based on the city?</li>
+							<li>What is the ratio of number of data jobs posted to per capita crime rate based on the city?</li></ul></p>
 					</div>
-
+		
+					<div class="prj">
+						<u><h5><a href="https://github.com/esharma3/project_austin_air_quality_analysis_and_prediction" target="_blank">Austin Air Quality Analysis and Prediction</a></h5></u>
+						<p>Air Quality Descriptive and Predictive Analysis for the city of Austin, Texas implemented using Linear and Polynomial Regression.<br> 
+						 Changes in climate can result in impacts to local air quality. The purpose of this project is to find the impact of climate on air quality for the city of Austin in Texas.  The air qaulity parameters analyzed in this project are Ozone and Nitrogen Dioxide. </p>
 					</div>
-			</div>
-			</div>
-	</section>
- -->
-		<!-- my projects -->
-
-		<section id="projects">
-				<div class="view" style="background-image: url('images/bg1.jfif'); background-repeat: no-repeat; background-size: cover; height: 100%;
-  	   	background-position: center center;">
-			<div class="container d-flex flex-column text-white">
-				<hr class="w-25 mx-auto">
-				<h1 class="text-center text-capitalize pt-5">Some Interesting Codes I Wrote</h1>
+			
+					<div class="prj">					
+						<u><h5><a href="https://github.com/esharma3/project_boston_houseprice_predictions" target="_blank">Boston Housing Price Prediction</a></h5></u>
+						<p>Boston Housing Price Prediction using Linear and Polynomial Regression using Kaggle Dataset. The project implements univariate and multivariate linear and polynomial regression models.</p>							
+					</div>
+			
+					<div class="prj">					
+						<u><h5><a href="https://github.com/esharma3/Web_Visualization_Dashboard" target="_blank">Web Visualization Dashboard for Latitude vs Climate Analysis</a></h5></u>
+						<p>Analysis of the relation between latitude and climate parameters for 500+ cities across the world of varying distance from the equator and creating a visualization dashboard to display the findings.</p>							
+					</div>
 				
-
-				<div class="row text-center pt-5 pb-5">
-
-					<div class="col-lg-4 col-md-4 col-12">
-						<span class="image fit"><img src="images/blackjack.jfif" width="200" height="230" alt="" /></span>
-						<h4><br>Black Jack<br></h4>
-						<p>Simple game of Black Jack implemted using Python Classes.</p>
-							<a href="https://github.com/esharma3/blackjack_game" target="_blank" class="btn btn-outline-secondary btn-md">More</a>					
+					<div class="prj">					
+						<u><h5><a href="https://github.com/esharma3/blackjack_game" target="_blank">Black Jack</a></h5></u>
+						<p>Simple game of Black Jack implemted using Python Object Oriented Programming concepts.</p>
 					</div>
-
-
-					<div class="col-lg-4 col-md-4 col-12">
-						<span class="image fit"><img src="images/tictactoe.png" width="200" height="230" alt="" /></span>
-						<h4><br>Tic Tac Toe<br></h4>
+			
+					<div class="prj">					
+						<u><h5><a href="https://github.com/esharma3/tic_tac_toe" target="_blank">Tic-Tac-Toe</a></h5></u>
 						<p>Game of Tic Tac Toe implemted using core Python.</p>
-							<a href="https://github.com/esharma3/tic_tac_toe" target="_blank" class="btn btn-outline-secondary btn-md">More</a>
 					</div>
-
-						<div class="col-lg-4 col-md-4 col-12">
-							<span class="image fit"><img src="images/python.jfif" width="200" height="230" alt="" /></span>
-							<h4><br>Python Challenges (UT Austin Data Analytics Bootcamp)<br></h4>
-							<p>Set of four Python Programs (PyBank, PyPoll, PyBoss, PyParagraph) covering important Python concepts.</p>
-								<a href="https://github.com/esharma3/Python-Challenge" target="_blank" class="btn btn-outline-secondary btn-md">More</a>
-						</div>
-
-							<div class="col-md-12 text-center text-white mt-xl-5 pt-5 pb-5">
-						<a class="btn btn-outline-info btn-lg" href="#analysis" role="button">Continue</a>
-					</div>
-				</div>
-
-
-			</div>
-		</section>	
-
-		<section id="analysis">
-			<div class="view" style="background-image: url('images/bg1.jfif'); background-repeat: no-repeat; background-size: cover; height: 100%;
-  	   			background-position: center center;">
-			<div class="container text-white d-flex flex-column pt-5">
-				<hr class="w-2 mx-auto">
 				
-				<h1 class="text-center text-capitalize">My Data Analysis Projects</h1>
+					<div class="prj">						
+						<u><h5><a href="https://github.com/esharma3/Python-Challenge" target="_blank">Python Programming</a></h5></u>
+						<p>Python scripts to handle 4 real world problems - analyzing the financial records of a company, modernizing vote-counting process, automating the passage analysis, converting employee records to the required format.</p>
+					</div>
 				
-
-				<div class="row text-center pt-5 pb-5">
-
-					<div class="col-lg-4 col-md-4 col-12">
-						<span class="image fit"><img src="images/jobs.png" width="200" height="230" alt="" /></span>
-						<h4><br>Indeed Data Jobs Market analysis</h4>
-						<p>Indeed Data Jobs Analysis for Top 10 US Tech Cities (comparing number of data jobs, companies, salaries and cost of living.</p>
-							<a href="https://github.com/esharma3/project_data_jobs_market_analysis" target="_blank" class="btn btn-outline-secondary btn-md">More</a>
-					</div>
-
-
-					<div class="col-lg-4 col-md-4 col-12">
-						<span class="image fit"><img src="images/spread.png" width="200" height="230" alt="" /></span>
-						<h4><br>Matplotlib challenge</h4>
-						<p>Pymaceuticals - Matplotlib challenge (UT Austin Data Analytics Bootcamp).</p>
-							<a href="https://github.com/esharma3/matplotlib-challenge" target="_blank" class="btn btn-outline-secondary btn-md">More</a>
-					</div>
-
-						<div class="col-lg-4 col-md-4 col-12">
-						<span class="image fit"><img src="images/api.png" width="200" height="230" alt="" /></span>
-						<h4><br>API Challenge</h4>
-						<p>WeatherPy - API Challenge (UT Austin Data Analytics Bootcamp).</p>
-					 	<a href="https://github.com/esharma3/API-Challenge" target="_blank" class="btn btn-outline-secondary btn-md">More</a>
-					</div>
-
-						<div class="col-md-12 text-center text-white mt-xl-5 pt-5 pb-5">
-						<a class="btn btn-outline-info btn-lg" href="#ml" role="button">Continue</a>
+					<div class="prj">					
+						<u><h5><a href="https://github.com/esharma3/matplotlib-challenge" target="_blank">Matplotlib Visualizations for Skin Cancer Treatments</a></h5></u>
+						<p>Created various matplotlib plots to show how the four potential treatments (Capomulin, Infubinol, Ketapril, and Placebo) for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer compare.</p>
 					</div>
 
 				</div>
-			</div>
-		</section>	
+			</section>
 
-		<section id="ml">
-			<div class="view" style="background-image: url('images/bg1.jfif'); background-repeat: no-repeat; background-size: cover; height: 100%;
-  	   			background-position: center center;">
-			<div class="container text-white d-flex flex-column">
-				<hr class="w-25 mx-auto">
-				<h1 class="text-center text-capitalize pt-5">Some hands on Machine Learning and Statistics</h1>
-				
+<!-- experience -->
 
-				<div class="row text-center pt-5 pb-5">
+			<section id="experience">
 
-					<div class="col-lg-4 col-md-4 col-12">
-						<span class="image fit"><img src="images/air.png" width="200" height="230" alt="" /></span>
-						<h4><br>Austin Air Quality Analysis and Prediction</h4>
-						<p>Air Quality Descriptive and Predictive Analysis for the city of Austin, Texas implemented using Linear and Polynomial Regression.</p>
-							<a href="https://github.com/esharma3/project_austin_air_quality_analysis_and_prediction" target="_blank" class="btn btn-outline-secondary btn-md">More</a>
-					</div>
+				<div class="aboutme">
 
-
-					<div class="col-lg-4 col-md-4 col-12">
-						<span class="image fit"><img src="images/boston.jfif" width="200" height="230" alt="" /></span>
-						<h4><br>Boston Housing Price Prediction</h4>
-						<p>Boston Housing Price Prediction using Linear and Polynomial Regression using Kaggle Dataset.</p>
-							<a href="https://github.com/esharma3/project_boston_houseprice_predictions" target="_blank" class="btn btn-outline-secondary btn-md">More</a>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-12">
-						<span class="image fit"><img src="images/boston.jfif" width="200" height="230" alt="" /></span>
-						<h4><br>Boston Housing Price Prediction</h4>
-						<p>Boston Housing Price Prediction using Linear and Polynomial Regression using Kaggle Dataset.</p>
-						<a href="https://github.com/esharma3/project_boston_houseprice_predictions" target="_blank" class="btn btn-outline-secondary btn-md">More</a>
-					</div>
-
-						<div class="col-md-12 text-center text-white mt-xl-5 pt-5 pb-5">
-						<a class="btn btn-outline-info btn-lg" href="#header" role="button">Back to Top</a>
-					</div>
+					<h1>Work Experience
+					<hr></h1>
+					<h4>Wells Fargo, USA</h4>      
+						<h6>Four long term contracts between May 2010 to September 2019</h6>       
+						<h6>Group: Hogan Customer Information System (CIS)</h6>
+						<h6>Role: Customer Information System Analyst</h6>
+					<h4>Computer Sciences Corporation, India</h4>
+						<h6>June 2007 – July 2009</h6>
+						<h6>Group: Hogan Banking Relationship and Profitability System (RPS – RPM & CIS) New Product Release</h6>
+						<h6>Role: Engineer Application Development</h6>
+					<h4>Kanbay Softwares (Capgemini), India</h4>
+						<h6>January 2006 – June 2007</h6>
+						<h6>Group: Vision Plus Development and Production Support</h6>
+						<h6>Role: Associate Consultant – Mainframe Development</h6>
 				</div>
-			</div>
-		</section>	
 
+			</section>
+		</div>
 		<!-- smooth scroll -->
 		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 		<script>
 				var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});
 		</script>
-
-						
-<!-- 
-		<div class="skills">
-
-				<div class="skill1">
-					<h3>Python Programming & More</h3>
-					<ul>
-						<li>Python 3</li>
-						<li>Numpy</li>
-						<li>Pandas</li>
-						<li>Matplotlib</li>
-						<li>Plotly</li>
-						<li>Bokeh</li>
-						<li>API Interactions, Web-Scrapping(BeautifuL Soup)</li>
-						<li>SQL, SQLAlchemy, Flask, Flask-SQLAlchemy</li>
-						<li>Social Media Mining</li>
-					</ul>
-				</div>
-
-				<div class="skill2">
-					<h3>Front-End Web Visualization</h3>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Bootstrap</li>
-						<li>Dashboarding</li>
-						<li>JavaScript Charting</li>
-						<li>D3.js</li>
-						<li>Geomapping with Leaflet.js</li>
-					</ul>
-				</div>
-
-				<div class="skill3">
-					<h3>Machine Learning and Statistics</h3>
-					<ul>
-						<li>Machine Learning Algorithms</li>
-						<li>Statistics for Machine Learning</li>
-						<li>Seaborn</li>
-						<li>Scikit Learn</li>
-						<li>Statsmodel</li>
-					</ul>
-				</div>
-
-				<div class="skill4">
-					<h3>Databases</h3>
-					<ul>
-						<li>MySQL</li>
-						<li>MongoDB</li>
-						<li>SQLite</li>
-					</ul>
-				</div>
-
-				<div class="skill5">
-					<h3>Business Intelligence Software</h3>
-					<ul>
-						<li>Tableau</li>
-						<li>PowerBI</li>
-					</ul>
-				</div>
-
-				<div class="skill6">
-					<h3>Advanced Topics</h3>
-					<ul>
-						<li>Big Data Analytics with Hadoop</li>
-					</ul>
-				</div>
-
-			</div>
-
-		</div> -->
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 	</body>
 </html>
