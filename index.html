@@ -7,18 +7,40 @@
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<!-- <script src="js/scroll.js"></script> -->
 		<link href = "/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
      	<script src = "/scripts/jquery.min.js"></script>
       	<script src = "/bootstrap/js/bootstrap.min.js"></script>
       	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+      	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Custom fonts for this template -->
+
+	    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+
+	    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 	</head>
 
 
-	<body>
+	<body data-spy="scroll" data-target="#sidebar" data-offset="100">
 
-		<nav id="sidebar" class="navbar navbar-expand-lg bg-dark fixed-top">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-			<a class="navbar-brand js-scroll-trigger pt-5" href="#header">
+  		
+		<nav class="navbar navbar-expand-lg fixed-top bg-dark" id="sidebar">
+
+			<a class="navbar-brand pt-5" href="#about">
 			    <span class="d-block d-lg-none">Welcome to My Page</span>
 			    <span class="d-none d-lg-block">
          			<img class="img-fluid img-profile rounded-circle" src="images/my_pic.jpg" alt="">
@@ -30,29 +52,33 @@
       		</button>
 
      	 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		  		<ul class="navbar-nav flex-column">
+		  		<ul class="nav navbar-nav flex-column">
 				   	<li class="nav-item">
-				      <a class="nav-link js-scroll-trigger active" href="#header">About</a></li>
+				      <a class="nav-link" href="#about">About</a></li>
 				    <li class="nav-item">
-				      <a class="nav-link js-scroll-trigger" href="#education">Education & Certifications</a> </li>				  
+				      <a class="nav-link" href="#education">Education & Certifications</a></li>				  
 				    <li class="nav-item">
-				      <a class="nav-link js-scroll-trigger" href="#skillset">Skillset</a></li>				
+				      <a class="nav-link" href="#skillset">Skillset</a></li>				
 				    <li class="nav-item">
-				      <a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+				      <a class="nav-link" href="#projects">Projects</a></li>
 				    <li class="nav-item">
-				      <a class="nav-link js-scroll-trigger" href="#experience">Work Experience</a></li>	
+				      <a class="nav-link" href="#experience">Work Experience</a></li>	
 		  		</ul>
 		  	</div>
 
 		</nav>
 
-<!-- about me -->
+<!-- main -->
 
- 		<section id="header">
+ 		<section id="main">
 
  			<div class="container-fluid">
+
+ <!-- about me -->
 		
-				<section class="about">
+				<section class="my_info">
+
+					<div class="about_me" id="about">
 
 					<div class="aboutme">
 						<h1 class="pb-1">Ekta Sharma</h1>
@@ -62,7 +88,7 @@
 						<hr class="w-80 mx-auto"></h6> 
 
 						<h6>Email: ekta.sharma3@gmail.com</h6>
-						<h6>Cell: (415) 937-4164</h6>
+						<h6>Cell: (415) 937 4164</h6>
 						<br><br>
 					</div>
 						 
@@ -80,15 +106,16 @@
 
 							I will soon complete my Data Science and Analytics Certification course from University of Texas in Austin where I have developed  strong programming and data science skills that can tackle business problems in any domain. I have over a decade of experience in consulting and banking industry and I hold a Master's degree in Computer Applications.<br><br><br></p>
 					</div>
+				</div>
 
 				</section>
 
 
 	<!-- education -->
 
-				<section id="education">
+				<section class="my_education">
 
-					<div class="aboutme">
+					<div class="aboutme" id="education">
 						<h1>Education and Certifications
 						<hr></h1>
 						<h5>Data Science/Analytics Certification, University of Texas, Austin</h5>
@@ -114,9 +141,9 @@
 
 <!-- skillset -->
 
-			<section id="skillset">
+			<section class="my_skillset">
 
-				<div class="aboutme">
+				<div class="aboutme" id="skillset">
 
 					<h1>Skillset
 					<hr></h1>
@@ -191,9 +218,9 @@
 
 	<!-- my projects -->
 
-			<section id="projects">
+			<section class="my_projects">
 
-				<div class="aboutme">
+				<div class="aboutme" id="projects">
 
 					<h1>Projects
 					<hr></h1>
@@ -201,8 +228,9 @@
 
 					<div class="prj">
 						<u><h4><a href="https://github.com/esharma3/project_data_jobs_market_analysis" target="_blank">Indeed Data Jobs Market analysis (2019)</a></h4></u>
-						<p>The purpose of this project is to analyze the US job market for Data Jobs to answer the following questions. The scope of this project is limited to top 10 US Tech(IT) cities.</p>
-						<ul>					
+						<p>The purpose of this project is to analyze the US job market for Data Jobs to answer the following questions. The scope of this project is limited to top 10 US Tech(IT) cities.
+						<ul>
+							<li>Which US city has more data jobs?</li>
 							<li>Which US city has more data jobs?</li>
 							<li>Citywise which companies are posting more data jobs?</li>
 							<li>Which companies (combined for all 10 cities) are posting relatively higher number of data jobs?</li>
@@ -257,9 +285,9 @@
 
 <!-- experience -->
 
-			<section id="experience">
+			<section id="my_experience">
 
-				<div class="aboutme">
+				<div class="aboutme" id="experience">
 
 					<h1>Work Experience
 					<hr></h1>
@@ -279,14 +307,40 @@
 
 			</section>
 		</div>
+
+
+	<!-- Footer -->
+		<div class="container-fluid" id="copyright">
+			<footer>
+				<h6>@ Copyright Ekta Sharma, 2020</h6>
+				<hr>
+			</footer>
+	 	</div>
+
+	</section>
+
+
+
+	  <!-- Bootstrap core JavaScript -->
+
+
+	  <script src="vendor/jquery/jquery.min.js"></script>
+	  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  	  <script type="text/javascript" src="javascript/smoothscroll.js"></script> 
+
+	  <!-- Plugin JavaScript -->
+	  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	  <!-- Custom JavaScript for this theme -->
+	  	<script src="js/scroll.js"></script>
+	  	<!-- <script src="js/scroll-nav.js"></script> -->
+
 		<!-- smooth scroll -->
 		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 		<script>
 				var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});
 		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+		
 	</body>
 </html>
