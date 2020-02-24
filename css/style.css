@@ -1,0 +1,469 @@
+/**{
+	margin:0px;
+	padding:0px;
+	font-family: sans-serif;
+}*/
+
+.body {
+    background-color: red;
+ }
+
+
+.navbar{
+	width: 260px;
+	height:	100%;
+	padding-top: fixed;
+	top: 0;
+	left: 1;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*background-color: #cc9900;*/
+	overflow: auto;
+}
+
+.navbar-collapse{
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto; 
+}
+
+.navbar-collapse .navbar-nav{
+    flex-direction: column;
+    width: 100%; 
+}
+
+.navbar-collapse .navbar-nav .nav-item{
+    display: block; 
+}
+
+#sidebar .navbar-nav>.active> a, 
+#sidebar .navbar-nav>.active> a:focus, 
+#sidebar .navbar-nav>.active> a:hover {
+  color: orange;  
+}
+
+
+.navbar-collapse .navbar-nav .nav-item .nav-link{
+	display: block; 
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	font-family: sans-serif;
+	margin-top: 5px;
+	padding-top: 20px;
+	font-size: 1rem;
+	font-weight: 650;
+} 
+
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+	color: orange;
+}
+
+
+.container-fluid{
+	padding-left: 300px;
+}
+
+.aboutme {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 200px;
+	padding-left: 40px;
+	width: 100%;
+	line-height: 25px;
+	font-family: sans-serif;
+	float: right;
+	text-align: left;
+	justify-content: left;
+}
+
+.aboutme h1{
+	width: 100%;
+	line-height: 60px;
+	font-weight: 700;
+	font-size: 3rem;
+	font-family: sans-serif;
+	float: right;
+	text-align: left;
+	padding-top: 30px;
+}
+
+.aboutme h4{
+	width: 100%;
+	line-height: 30px;
+	font-weight: 600;
+	font-size: 1rem;
+	font-family: sans-serif;
+	float: right;
+	text-align: left;
+	color: black;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.aboutme h5{
+	width: 100%;
+	line-height: 30px;
+	font-weight: 600;
+	font-size: 1rem;
+	font-family: sans-serif;
+	float: right;
+	text-align: left;
+	color: black;
+	padding-top: 10px;
+}
+
+.aboutme h6{
+	width: 100%;
+	line-height: 15px;
+	font-weight: 600;
+	font-size: 1rem;
+	font-family: sans-serif;
+	float: right;
+	text-align: left;
+	color: grey;
+}
+
+.aboutme li{
+	width: 100%;
+	line-height: 20px;
+	font-weight: 500;
+	font-size: 1rem;
+	font-family: sans-serif;
+	text-align: left;
+	color: grey;
+	list-style: none;
+}
+
+.aboutme  p{
+	font-family: sans-serif;
+	line-height: 25px;
+	font-weight: 700;
+	font-size: 1rem;
+	text-align: left;
+	padding-left: none;
+	padding-top: none;
+	padding-bottom: none;
+	color: grey;
+}
+
+#copyright {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+
+/*---Media Queries --*/
+
+@media (max-width: 992px) {
+
+	.navbar{
+        display:none;
+    }
+
+    .container-fluid{
+		padding-left: 30px;
+		padding-right: 30px;
+		width: 100%;
+	}
+
+	.aboutme {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		width: 100%;
+		line-height: 20px;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		justify-content: left;
+	}
+
+	.aboutme h1{
+		width: 100%;
+		line-height: 30px;
+		font-weight: 700;
+		font-size: 2rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		padding-top: 20px;
+	}
+
+	.aboutme h4{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 600;
+		font-size: 1.2rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: black;
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+
+	.aboutme h5{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 600;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: black;
+		padding-top: 10px;
+	}
+
+	.aboutme h6{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: grey;
+	}
+
+	.aboutme a{
+		margin-top: 20px;
+		font-weight: 600;
+		font-size: 1rem;
+		font-family: sans-serif;
+	}
+
+	.aboutme li{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: grey;
+		list-style: none;
+	}
+
+	.aboutme  p{
+		font-family: sans-serif;
+		line-height: 20px;
+		font-size: 1rem;
+		text-align: left;
+		padding-top: none;
+		padding-bottom: none;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.navbar{
+        display:none;
+    }
+
+    .container-fluid{
+		padding-left: 30px;
+		padding-right: 30px;
+		width: 100%;
+	}
+
+	.aboutme {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		width: 100%;
+		line-height: 20px;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		justify-content: left;
+	}
+
+	.aboutme h1{
+		width: 100%;
+		line-height: 30px;
+		font-weight: 700;
+		font-size: 2rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		padding-top: 20px;
+	}
+
+	.aboutme h4{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 600;
+		font-size: 1.2rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: black;
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+
+	.aboutme h5{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 600;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: black;
+		padding-top: 10px;
+	}
+
+	.aboutme h6{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: grey;
+	}
+
+	.aboutme a{
+		margin-top: 20px;
+		font-weight: 600;
+		font-size: 1rem;
+		font-family: sans-serif;
+	}
+
+	.aboutme li{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: grey;
+		list-style: none;
+	}
+
+	.aboutme  p{
+		font-family: sans-serif;
+		line-height: 20px;
+		font-size: 1rem;
+		text-align: left;
+		padding-top: none;
+		padding-bottom: none;
+	}
+}
+
+ 
+@media (max-width: 576px) {
+
+	.navbar{
+        display:none;
+    }
+
+    .container-fluid{
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	}
+
+	.aboutme {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		width: 100%;
+		line-height: 20px;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		justify-content: left;
+	}
+
+	.aboutme h1{
+		width: 100%;
+		line-height: 30px;
+		font-weight: 700;
+		font-size: 2rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		padding-top: 20px;
+	}
+
+	.aboutme h4{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 600;
+		font-size: 1.2rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: black;
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+
+	.aboutme h5{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 600;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: black;
+		padding-top: 10px;
+	}
+
+	.aboutme h6{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: grey;
+	}
+
+	.aboutme a{
+		margin-top: 20px;
+		font-weight: 600;
+		font-size: 1rem;
+		font-family: sans-serif;
+	}
+
+	.aboutme li{
+		width: 100%;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1rem;
+		font-family: sans-serif;
+		float: right;
+		text-align: left;
+		color: grey;
+		list-style: none;
+	}
+
+	.aboutme  p{
+		font-family: sans-serif;
+		line-height: 20px;
+		font-size: 1rem;
+		text-align: left;
+		padding-top: none;
+		padding-bottom: none;
+	}
+}
